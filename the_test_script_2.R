@@ -22,9 +22,6 @@ setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
 library(plyr)
 
 # world capital data file
-world_capitals2 <- read_delim("~/metoo_trend/world_capitals2.txt", sep="\t", escape_double = FALSE, trim_ws = TRUE)
-world_capitals2$country <- gsub(" " , "_" , world_capitals2$country)
-world_capitals2$capital <- gsub(" " , "_" , world_capitals2$capital)
 
 # grab metoo tweets from the first 10 capitals on the list
 # and extract how many from each capital
