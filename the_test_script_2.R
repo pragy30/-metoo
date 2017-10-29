@@ -1,6 +1,7 @@
-# extract metoo trends (n = 10 million)
-# last 6 months, English tweets, from Sheffield to NZ
-# Sheffield lat 53.3811N long 1.407W , 11736mi
+# extract metoo trends (n = 1000) from Andorra 
+# The most recent ones.
+# Save the number of tweets and the tweets in a txt file
+
 setwd("~/metoo_trend")
 
 install.packages("twitteR")
@@ -37,7 +38,7 @@ tweet_count <- c()
   #geocode="34.2,69.11" , lang='en')
   #geocode="test[i,3],test[i,4]" , lang='en')
   feed_metto <- lapply(tweets_metoo , function(t) t$getText())
-  tweet_count <- length(feed_metto)
+  tweet_count <- length(tweets_metoo)
   lapply(feed_metto , write , "recent_tweets-from_Andorra.txt" , append = T)
 #}
 
