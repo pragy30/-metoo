@@ -1,0 +1,15 @@
+country	capital	latitude	longitude	tweet_count	continents
+China	Beijing	39.55	116.2	56	Asia
+India	New_Delhi	28.37	77.13	2351	Asia
+Israel	Jerusalem	31.71	35.1	464	Asia
+Pakistan	Islamabad	33.4	73.1	1275	Asia
+Thailand	Bangkok	13.45	100.35	1462	Asia
+Japan	Tokyo	35.6895	139.69	1020	Asia
+Egypt	Cairo	30.01	31.14	369	Africa
+Kenya	Nairobi	1.17	36.48	119	Africa
+South Africa	Pretoria	25.44	28.12	217	Africa
+Brazil	Brasilia	15.47	47.55	289	S.America
+Colombia	Bogota	4.34	74	326	S.America
+Canada	Ottawa	45.27	75.42	20	N.America
+United States of America	Washington_DC	39.91	77.02	947	N.America
+Australia	Canberra	35.15	149.08	989	Australasia
