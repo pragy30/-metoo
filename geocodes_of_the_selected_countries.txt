@@ -1,0 +1,40 @@
+country	capital	latitude	longitude
+Australia	Canberra	35.15	149.08
+Austria	Vienna	48.12	16.22
+Belgium	Brussels	50.51	4.21
+Brazil	Brasilia	15.47	47.55
+Canada	Ottawa	45.27	75.42
+China	Beijing	39.55	116.2
+Colombia	Bogota	4.34	74
+Czech Republic	Prague	50.05	14.22
+Denmark	Copenhagen	55.41	12.34
+Egypt	Cairo	30.01	31.14
+Finland	Helsinki	60.15	25.03
+France	Paris	48.5	2.2
+Germany	Berlin	52.3	13.25
+Greece	Athens	37.58	23.46
+Hungary	Budapest	47.29	19.05
+Iceland	Reykjavik	64.1	21.57
+India	New Delhi	28.37	77.13
+Ireland	Dublin	53.21	6.15
+Israel	Jerusalem	31.71	35.1
+Italy	Rome	41.54	12.29
+Kenya	Nairobi	1.17	36.48
+Netherlands	Amsterdam	52.23	4.54
+New Zealand	Wellington	41.19	174.46
+Nigeria	Abuja	9.05	7.32
+Norway	Oslo	59.55	10.45
+Pakistan	Islamabad	33.4	73.1
+Poland	Warsaw	52.13	21
+Portugal	Lisbon	38.42	9.1
+Romania	Bucuresti	44.27	26.1
+South Africa	Pretoria	25.44	28.12
+Spain	Madrid	40.25	3.45
+Sweden	Stockholm	59.2	18.03
+Switzerland	Bern	46.57	7.28
+Thailand	Bangkok	13.45	100.35
+Turkey	Ankara	39.57	32.54
+United States of America	Washington DC	39.91	77.02
+Russian Federation	Moskva	55.45	37.35
+United Kingdom of Great Britain and Northern Ireland	London	51.36	0.05
+Japan	Tokyo	35.6895	139.69
