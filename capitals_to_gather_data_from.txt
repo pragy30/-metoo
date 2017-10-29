@@ -1,0 +1,44 @@
+country	city	latitude 	longitude
+Austria	Vienna		
+Belgium	Brussels		
+Czech Republic	Prague		
+Denmark	Copenhagen		
+Finland	Helsinki		
+France	Paris		
+Germany	Berlin		
+Greece	Athens		
+Hungary	Budapest		
+Iceland	Reykjavik		
+Ireland	Dublin		
+Italy	Rome		
+Netherlands	Amsterdam		
+Norway	Oslo		
+Poland	Warsaw		
+Portugal	Lisbon		
+Romania	Bucharest		
+Russia	Moscow		
+Spain	Madrid		
+Sweden	Stockholm		
+Switzerland	Bern		
+Turkey	Ankara		
+United Kingdom	London		
+Canada	Ottawa		
+United States of America	"Washington, D.C."		
+Egypt	Cairo		
+Kenya	Nairobi		
+Morocco	Rabat		
+Nigeria	Abuja		
+South Africa	Pretoria 		
+			
+China	Beijing		
+India	New Delhi		
+Iran	Tehran		
+Israel	Jerusalem		
+Japan	Tokyo		
+Pakistan	Islamabad		
+Singapore	Singapore		
+Thailand	Bangkok		
+Australia	Canberra		
+New Zealand	Wellington		
+Brazil	Brasilia		
+Colombia	Bogotá		
