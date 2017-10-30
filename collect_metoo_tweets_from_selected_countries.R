@@ -181,147 +181,182 @@ colnames(namerica) <- c("country" , "capital" , "latitude" , "longitude" , "twee
 # TODO: Add Europe dataset
 # TODO: Add map analysis
 
+# extract metoo trends (n = 100,000) from over the weekend from the selected capitals
+###########################################################################################################
+###########################################################################################################
 
-####################################################################################################################
+###################################################################################################################
 # gather tweets from Europe
 ####################################################################################################################
 tweet_count_europe <- c()
 # Austria
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="48.12,16.22,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="48.12,16.22,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Vienna.txt" , append = T)
 # Belgium
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="50.51,4.21,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="50.51,4.21,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Brussels.txt" , append = T)
 # Czech
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="50.05,14.22,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="50.05,14.22,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Prague.txt" , append = T)
 # Denmark
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="55.41,12.34,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="55.41,12.34,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Copenhagen.txt" , append = T)
 # Finland
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="60.15,25.03,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="60.15,25.03,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Helsinki.txt" , append = T)
 # France
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="48.5,2.2,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="48.5,2.2,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Paris.txt" , append = T)
 # Germany
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="52.3,13.25,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="52.3,13.25,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Berlin.txt" , append = T)
 # Greece
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="37.58,23.46,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="37.58,23.46,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Athens.txt" , append = T)
 # Hungary
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="47.29,19.05,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="47.29,19.05,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Budapest.txt" , append = T)
 # Iceland
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="64.1,21.57,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="64.1,21.57,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Reykjavik.txt" , append = T)
 # Ireland
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="53.21,6.15,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="53.21,6.15,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Dublin.txt" , append = T)
 # Italy
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="41.54,12.29,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="41.54,12.29,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Rome.txt" , append = T)
-# Netherland
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="59.55,10.45,800mi",resultType='recent')
+# Norway
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="59.55,10.45,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Oslo.txt" , append = T)
 # Poland
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="52.13,21,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="52.13,21,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Warsaw.txt" , append = T)
 # Portugal
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="38.42,9.1,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="38.42,9.1,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Lisbon.txt" , append = T)
 # Romania
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="44.27,26.1,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="44.27,26.1,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Bucharest.txt" , append = T)
 # Spain
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="40.25,3.45,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="40.25,3.45,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Madrid.txt" , append = T)
 # Sweden
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="59.2,18.03,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="59.2,18.03,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Stockholm.txt" , append = T)
 # Switzerland
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="46.57,7.28,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="46.57,7.28,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Bern.txt" , append = T)
 # Turkey
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="39.57,32.54,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="39.57,32.54,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Ankara.txt" , append = T)
 # Russia
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="55.45,37.35,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="55.45,37.35,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_Moscow.txt" , append = T)
 # United Kingdom
-tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25',geocode="21.36,0.005,800mi",resultType='recent')
+tweets_metoo <- searchTwitter('#MeToo',n=100000,since='2017-10-25', until='2017-10-29',geocode="21.36,0.005,800mi",resultType='recent')
 feed_metto <- lapply(tweets_metoo , function(t) t$getText())
 tweet_count <- length(tweets_metoo)
 tweet_count_europe <- cbind(tweet_count_europe , tweet_count)
 lapply(feed_metto , write , "recent_tweets_from_London.txt" , append = T)
 
+# data correction for europe
+europe <- europe[-c(13,14,15),]
 europe <- cbind(europe , t(tweet_count_europe))
 colnames(europe) <- c("country" , "capital" , "latitude" , "longitude" , "tweet_count")
+europe$continents <- "Europe"
 
 ###################################################################################################################
 ###################################################################################################################
-# 
+tweets_data <- rbind(europe , metoo_tweets_data_from_25Oct_to_29Oct)
+write.table(tweets_data , "metoo_tweets_data_from_25Oct_to_29Oct.txt" , quote = F , sep = "\t" , row.names = F)
+
+# get the map
+install.packages("maps")
+install.packages("mapdata")
+install.packages("ggmap")
+install.packages("rworldmap")
+
+library(ggplot2)
+library(ggmap)
+library(dplyr)
+
+# to check the geocodes of the cities- which are horribly wrong in the end!
+# USA + Australia
+
+#library(maps)
+#library(mapdata)
+#world <- map_data("world")
+#library(rworldmap)
+#worldmap <- getMap(resolution = "low")
+#plot(worldmap)
+#points(tweets_data$long , tweets_data$lat , col = "red" , pch = 20)
+
+europe <- get_map(location = "Europe" , zoom = 4)
+mapPoints <- ggmap(europe) # plot the map for Europe
+                + geom_point(aes(x = long, y = lat, size = tweet_count), data = tweets_data , col = "red", alpha = .5)
+
+
+
